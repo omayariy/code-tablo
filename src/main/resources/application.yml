@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5344/postgres
+    username: 'postgres'
+    password: 'super_secret_pwd'
+    connection-test-query: 'SELECT 1'
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
